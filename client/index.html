@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>URL Shortener</title>
+    <meta name="description" content="A simple URL shortener." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>URL Shortener</h1>
+    <label for="urlInput">Input your original url:</label>
+    <input
+      type="text"
+      name="urlInput"
+      id="urlInput"
+      placeholder="eg: http://www.google.com"
+    />
+    <button id="urlButton" type="button">Shorten URL</button>
+    <p id="urlMessage"></p>
+    <a id="urlLink" href="#" target="_blank"></a>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
