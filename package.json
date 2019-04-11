@@ -1,0 +1,33 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "A simple URL shortener",
+  "scripts": {
+    "test": "jest",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasestevao/url-shortener.git"
+  },
+  "keywords": [
+    "vanillajs",
+    "node",
+    "tdd"
+  ],
+  "author": "Lucas Estevão",
+  "bugs": {
+    "url": "https://github.com/lucasestevao/url-shortener/issues"
+  },
+  "homepage": "https://github.com/lucasestevao/url-shortener#readme",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.0",
+    "shortid": "^2.2.14"
+  }
+}
