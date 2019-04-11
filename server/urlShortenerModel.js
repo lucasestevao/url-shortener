@@ -2,12 +2,12 @@ const mongoose = require('mongoose')
 
 const { Schema } = mongoose
 
-const urlShortenerSchema = new Schema({
-  urlCode: String,
-  originalUrl: String,
-  shortenedUrl: String,
-  createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+const UrlShortenerModel = new Schema({
+  urlCode: { type: String, required: true },
+  originalUrl: { type: String, required: true },
+  shortenedUrl: { type: String, required: true },
+  createdAt: { type: Date, default: Date.now, required: true },
+  updatedAt: { type: Date, default: Date.now, required: true }
 })
 
-mongoose.model('urlShortenerModel', urlShortenerSchema)
+module.exports = mongoose.model('UrlShortenerModel', UrlShortenerModel)

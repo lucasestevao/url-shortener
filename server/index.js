@@ -25,6 +25,6 @@ const app = express()
 app.use(bodyParser.json())
 app.use('/', express.static('client'))
 
-require('./urlShortenerRouter')(app)
+require('./UrlShortenerRouter')(app)
 
 app.listen(3000, () => console.log('URL Shortener app listening on port 3000!'))

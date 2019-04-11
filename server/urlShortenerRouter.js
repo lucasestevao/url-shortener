@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
+const UrlShortenerModel = require('./urlShortenerModel')
 
-const UrlShortenerModel = mongoose.model('urlShortenerModel')
 const shortid = require('shortid')
 
 const baseUrl = 'http://localhost:3000'

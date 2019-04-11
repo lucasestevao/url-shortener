@@ -4,6 +4,7 @@
   "description": "A simple URL shortener",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watchAll --coverage",
     "start": "node server/index.js"
   },
   "repository": {
@@ -21,7 +22,11 @@
   },
   "homepage": "https://github.com/lucasestevao/url-shortener#readme",
   "devDependencies": {
-    "jest": "^24.7.1"
+    "assert": "^1.4.1",
+    "jest": "^24.7.1",
+    "stream": "0.0.2",
+    "sinon": "^7.3.1",
+    "http": "0.0.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
